@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,45 +8,101 @@
     <title>Hair Altar</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&display=swap" rel="stylesheet">
 </head>
-<body>
 
-    <h1>Hello, World! Let's talk about hair.</h1>
-    <p1>This is an ode to hair and the way it sits our heads, frames our worldview, and shapes outside perception.</p>
-    <img src="images/Flea-bag.jpeg">
-    <p2> "It's the difference between a good and a bad day!" </p2>
-    <a href="page-two.html">Scissor Happy</a>
-    
+<body>
+<div class="allslides">
+    <div class="slide1">
+        <h1>Hello, World! Let's talk about hair.</h1>
+        <p>This is an ode to hair and the way it sits our heads, frames our worldview, and shapes outside perception.
+        </p>
+        <img class="slide1-img" src="images/Flea-bag.jpeg">
+        <p> "It's the difference between a good and a bad day!"
+            <br />
+            <a href="page-two.html">Scissor Happy</a>
+
+        </p>
+
+        
+    </div>
+
+    <div class="slide2">
+        <h1>This is slide 2</h1>
+
+    </div>
+
+    <div class="slide3">
+        <h1>This is slide 3</h1>
+    </div>
+    <div class="slide4">
+        <h1>This is slide 4</h1>
+
+    </div>
+    <div class="slide5">
+        <h1>This is slide 5</h1>
+
+    </div>
+</div>
 
 </body>
+
 </html>
 
 <style>
+    /* There are three steps to flexbox */
+    
+    .allslides{
+        /* The first is setting the parent container to display: flex */
+        display: flex;
+        /* The second is setting the flex-direction to row or column */
+        flex-direction: row;
+    }
+
+    .slide1, .slide2, .slide3, .slide4, .slide5 {
+        /* The third is setting the width of the child elements to 100% */
+        width: 100vw;
+    }
+
+    .slide1-img {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
     body {
         background-color: #B51616;
+        width: 500vw;
+
+        /* You can uncomment this if you want to cap the vertical scroll */
+        /* height: 100vh;
+        overflow-y: scroll; */
+
+
+        /* This code is for setting a custom image as your cursor, general rule of them it shouldn't be larger than 72x72 pixels */
+        cursor: url('path-to-image.png'), auto;
     }
-    h1 { color: #FFFFFF; }
+
     h1 {
-        position: fixed;
-        top: 0px;
-        left: 300px;
-        padding: 10px;
-    }
-    p1 {
-        position: fixed;
-        top: 10px;
-        left: 300px;
-        padding: 100px;
-        margin-bottom: 10px;  
+        /* position: fixed; */
+        /* top: 0px;
+        left: 300px; */
+        margin: 0px;
+        padding: 0px;
+        color: #FFFFFF;
+        text-align: center;
     }
 
+    p {
+        /* position: fixed; */
+        /* top: 100px;
+        left: 300px; */
+        margin: 0px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        text-align: center;
 
-
+    }
 </style>
 </body>
-
-
-
-
