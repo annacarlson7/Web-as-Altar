@@ -78,8 +78,8 @@
         /* height: 100vh; */
         overflow-y: scroll;
 
-        /* This code is for setting a custom image as your cursor, general rule of them it shouldn't be larger than 72x72 pixels */
-        cursor: url('images/scissor.png') 0 0, pointer;
+        /* Custom SVG scissors cursor */
+        cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><text x="4" y="28" font-size="28" fill="black">✂</text></svg>') 16 16, auto;
     }
 
     h1 {
@@ -100,6 +100,18 @@
         padding-top: 10px;
         padding-bottom: 15px;
         text-align: center;
+
+    }
+    .slide2
+    p {
+        /* position: fixed; */
+        /* top: 100px;
+        left: 300px; */
+        margin: 0px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        text-align: center;
+        color: #FFFFFF;
 
     }
 </style>
